@@ -59,3 +59,6 @@ Timestamp | Comment | Sentiment Score | Offensive
 2025-04-15 10:03 AM | "I love this!" | 0.89 | No
 2025-04-15 10:04 AM | "You're the worst!" | -0.75 | Yes
 2025-04-15 10:05 AM | "Meh, it was okay." | 0.10 | No
+
+# 🧑‍💻 Author
+Made with 💙 by Mohamed Shalman KursheethK for research and demo use
