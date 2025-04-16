@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Twitter-like Design</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar left-sidebar">
+          <ul>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Notifications</li>
+            <li>Messages</li>
+            <li>Grok</li>
+            <li>Lists</li>
+            <li>Communities</li>
+            <li>Premium</li>
+            <li>Profile</li>
+            <li>More</li>
+            <li>Posts</li>
+          </ul>
+
+
+          <div class="account-info">
+            <h2>Account Info</h2>
+            <ul>
+              <li>Username: dummyuser</li>
+              <li>Followers: 1000</li>
+              <li>Following: 500</li>
+            </ul>
+          </div>
+        </aside>
+        <main>
+          <header>
+            <h1>Twitter</h1>
+          </header>
+    
+          <div class="card">
+            <form id="post-form">
+              <form id="post-form">
+                <textarea id="post-text" name="post_text" placeholder="What's happening?"></textarea>
+                <button type="submit" id="post-button">Post</button>
+            </form>
+            <div id="emotion-bar" >
+              <div id="bar"></div>
+              <div id="pointer" class="draggable-pointer">
+
+              </div>
+            </div>
+    
+            <div class="tweets">
+                <!-- Sample Tweet -->
+                <div class="tweet">
+                  <div class="user-avatar"></div>
+                  <div class="tweet-content">
+                    <span class="user-name">John Doe</span>
+                    <p>This is a sample tweet. #TwitterClone</p>
+                  </div>
+                </div>
+                <!-- Additional tweets go here -->
+              </div>
+              <div class="tweet">
+                <div class="user-avatar"></div>
+                <div class="tweet-content">
+                    <span class="user-name">Hamiltonian</span>
+                    Just enjoyed a relaxing weekend getaway. Sometimes, a break from the routine is all you need. 🌴 #WeekendVibes #Refreshed
+                </div>
+            </div>
+    
+            <!-- Tweet 2 -->
+            <div class="tweet">
+                <div class="user-avatar"></div>
+                <div class="tweet-content">
+                    <span class="user-name">Edison</span>
+                    Excited to announce a new project I've been working on! Stay tuned for updates. 🚀 #ProjectLaunch #ExcitingTimes
+                </div>
+            </div>
+          </div>
+        </main>
+    
+        <aside class="sidebar right-sidebar">
+          <div class="premium-info">
+            <h2>Premium Subscription</h2>
+            <p>Unlock exclusive features with Twitter Premium.</p>
+            <button>Upgrade</button>
+          </div>
+    
+          <div class="trending">
+            <h2>What's happening</h2>
+            <ul>
+              <li>#TrendingTopic1</li>
+              <li>#TrendingTopic2</li>
+              <li>#TrendingTopic3</li>
+            </ul>
+          </div>
+    
+          <div class="who-to-follow">
+            <h2>Who to follow</h2>
+            <ul>
+              <li>User1</li>
+              <li>User2</li>
+              <li>User3</li>
+            </ul>
+          </div>
+    
+          
+        </aside>
+
+        <div class="popup-container" id="offensive-popup">
+          <div class="popup-content">
+            <div class="offensive-header">Offensive Content Warning</div>
+            <div class="offensive-text">This content may be offensive. Please ensure before posting!</div>
+            <form id="offensive-form">
+              <label for="reason">Input:</label>
+              <input type="text" id="reason" name="reason" >
+            </form>
+            <div class="popup-buttons">
+              <button id="save-button">Save</button>
+              <button id="cancel-button">Cancel</button>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Handle post button click
+      $('#post-button').on('click', function () {
+        // Show the emotion bar
+        $('#emotion-bar').show();
+
+        // You can add additional logic here for posting if needed
+      });
+    });
+  </script>
+</body>
+</html>
