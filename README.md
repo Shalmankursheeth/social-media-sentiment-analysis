@@ -28,5 +28,4 @@ A simple, interactive landing page inspired by Twitter, designed to analyze user
 
 ---
 
-## 🗂️ Project Structure
 
